@@ -15,6 +15,23 @@ public class Problema03 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int filas = 5;
+        String resultado = "";
+        for (int i = 1; i <= filas; i++) {
+            for (int z = 1; z <= i; z++) {
+                resultado = resultado + "*";
+            }
+            resultado = resultado + "\n";
+        }
+        for (int i = filas - 1; i >= 1; i--) {
+            for (int z = 1; z <= i; z++) {
+                resultado = resultado + "*";
+            }
+            resultado = resultado + "\n";
+        }
+        System.out.printf("%s", resultado);
     }
-    
 }
+
+    
+
